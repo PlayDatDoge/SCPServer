@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block title %}Settings{% endblock %}
+{% block content %}
+<!-- <link rel="stylesheet" href="dark_theme.css">
+<script src="dark-mode-switch.min.js"></script> -->
+
+
+<!-- 
+<div class="custom-control custom-switch">
+    <input type="checkbox" class="custom-control-input" id="darkSwitch" />
+    <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+    <input type='checkbox' name='cbox'>
+  </div>
+  <script src="dark-mode-switch.min.js"></script>
+  -->
+
+
+<!-- <button onclick="myFunction()">Toggle dark mode</button> -->
+<form class='colour' method="POST" action="/userpref" style="position:absolute ;height: auto; left: 48%;">
+<input type='checkbox' name='cbox'>
+<label>Theme</label>
+<input type='submit' value='Submit'>
+<link rel="stylesheet" href="dark-mode.css">
+<script src="dark-mode-switch.min.js"></script>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <form class='colour' method="POST" action="/userpref" style="position: relative ;height: auto; left: 48%;">
+<input type='checkbox' name='dbox'>
+<label></label>
+<input type="submit" value="Submit">
+</form> -->
+{% endblock %}

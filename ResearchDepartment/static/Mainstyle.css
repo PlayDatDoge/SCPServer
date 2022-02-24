@@ -1,0 +1,47 @@
+/* @import "variables";
+@import "config";
+@import "reset";
+@import "mixins"; */
+
+
+body {
+  background-color: var(--background_color);
+}
+/*# sourceMappingURL=Mainstyle.css.map */
+
+.logo-image{
+  width: 120px;
+  height: 105px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: 6px;
+}
+
+
+
+#dark-col {
+  padding: 5px;
+  color: #000;
+  font-size: 12px;
+  background: transparent;
+  -webkit-appearance: none;
+
+}
+
+#dark-col option {
+background-color: #ffffff;
+}
+
+.card-image{
+  width: 220px;
+  height: 125px;
+  overflow: hidden;
+  margin-top: -39px;
+  position: absolute;
+  right: 5%;
+  background-size:cover;
+  background-position:center;
+  border: 1px solid black;
+}
+img {max-width: 50%;}
+

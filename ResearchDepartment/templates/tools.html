@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block title %}Tools{% endblock %}
+{% block content %}
+
+<link rel="stylesheet" type="text/css" href="/static/toolspage.css">
+
+<link rel="stylesheet" type = "text/css" href="{{url_for('static',filename = 'Mainstyle.css')}}">
+            {% if session['theme'] %}
+            <link rel="stylesheet" type = "text/css" href="{{url_for('static',filename = session['theme']+'.css')}}">
+            {% else %}
+            <link rel="stylesheet" type = "text/css" href="{{url_for('static',filename = 'theme.css')}}">
+            {% endif %}
+    	<section class="cards-wrapper">
+    <div class="card-grid-space">
+      <div class="num"></div>
+      <a class="card" href="enodo" style="--bg-img: url(https://i.pinimg.com/564x/db/2d/26/db2d26c06699942c798e57e0a4c319ca.jpg)">
+        <div>
+          <h1>Project Enodo</h1>
+          <p>A database containing Class-D personnel information, as well as tools that are documented and have been proved, that are usefull for researchers.</p>
+          <div class="date"></div>
+          <div class="tags">
+            <div class="tag">CL2+</div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="card-grid-space">
+      <div class="num"></div>
+      <a class="card" href="https://sites.google.com/view/ethicscommitteecgscrp/home?authuser=0" style="--bg-img: url('https://pm1.narvii.com/7170/1613804d87e738c3a2140aee4cbf0651b1f6581er1-166-166v2_hq.jpg')">
+        <div>
+              <h1>Code Of Ethics site</h1>
+          <p>The ethics committee has made a document for site personnel that lists the code of ethics, all research personnel are to read and abide by the document</p>
+          <div class="date"></div>
+          <div class="tags">
+              <div class="tag">CL1+</div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <!-- <div class="card-grid-space">
+      <div class="num"></div>
+      <a class="card" href="https://codetheweb.blog/2017/10/14/links-images-about-file-paths/" style="--bg-img: url('https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/links-images-about-file-paths/cover.jpg')">
+        <div>
+          <h1>Links, images and about file paths</h1>
+          <p>Learn how to use links and images along with file paths…</p>
+          <div class="date"></div>
+          <div class="tags">
+            <div class="tag">HTML</div>
+          </div>
+        </div>
+      </a>
+    </div> -->
+    <!-- https://images.unsplash.com/photo-1520839090488-4a6c211e2f94?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=38951b8650067840307cba514b554ba5&auto=format&fit=crop&w=1350&q=80 -->
+</section>
+{% endblock %} 
